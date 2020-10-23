@@ -15,5 +15,6 @@ const countConsecutive = arrNum => {
     return max
 }
 console.log(`-------Start Jawaban Soal 1-------`)
+console.log(arr)
 console.log(countConsecutive(arr))
 console.log(`-------End Jawaban Soal 1-------`)

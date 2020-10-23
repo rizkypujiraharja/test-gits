@@ -1,14 +1,13 @@
-const arr = [1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1]
+const arr = [1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1]
 
 const countConsecutive = arrNum => {
     let max = 0, current = 0
-    arrNum.forEach((number, index) => {
+    arrNum.forEach(number => {
         if(number) {
             current++
-        }else{
-            if(max < current) {
+            if(max < current)
                 max = current
-            }
+        }else{
             current = 0
         }
     });
